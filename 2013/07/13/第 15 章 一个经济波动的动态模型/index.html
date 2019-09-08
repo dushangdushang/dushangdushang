@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="15.1 模型的要素 现在，让我们看一下构成动态 \(AD-AS\) 模型的五个方程。   批注 2019-09-07 142306  15.1.1 产出：产品与服务需求 \[ Y_t = \overline{Y}_t-\alpha(r_t-\rho)+\epsilon_t \] 式中，\(Y_t\) 为产品与服务的总产出；\(\overline{Y}_t\) 为经济的自然产出水">
+<meta name="keywords" content="宏观经济,Fight,Shocking">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第 15 章 一个经济波动的动态模型">
+<meta property="og:url" content="https://dushangdushang.github.io/2013/07/13/第 15 章 一个经济波动的动态模型/index.html">
+<meta property="og:site_name" content="fanzhuan">
+<meta property="og:description" content="15.1 模型的要素 现在，让我们看一下构成动态 \(AD-AS\) 模型的五个方程。   批注 2019-09-07 142306  15.1.1 产出：产品与服务需求 \[ Y_t = \overline{Y}_t-\alpha(r_t-\rho)+\epsilon_t \] 式中，\(Y_t\) 为产品与服务的总产出；\(\overline{Y}_t\) 为经济的自然产出水">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://dushangdushang.github.io/2013/07/13/images/1567825903385.png">
+<meta property="og:image" content="https://dushangdushang.github.io/2013/07/13/images/批注%202019-09-07%20142306.jpg">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567581533648.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567582493343.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567582806283.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567585035482.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567585271297.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567585378838.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567585798370.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567586062887.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567588430540.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567588630408.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567589152357.png">
+<meta property="og:image" content="c:/Users/13631/AppData/Roaming/Typora/typora-user-images/1567589997535.png">
+<meta property="og:updated_time" content="2019-09-08T02:33:26.718Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="第 15 章 一个经济波动的动态模型">
+<meta name="twitter:description" content="15.1 模型的要素 现在，让我们看一下构成动态 \(AD-AS\) 模型的五个方程。   批注 2019-09-07 142306  15.1.1 产出：产品与服务需求 \[ Y_t = \overline{Y}_t-\alpha(r_t-\rho)+\epsilon_t \] 式中，\(Y_t\) 为产品与服务的总产出；\(\overline{Y}_t\) 为经济的自然产出水">
+<meta name="twitter:image" content="https://dushangdushang.github.io/2013/07/13/images/1567825903385.png">
+  <link rel="canonical" href="https://dushangdushang.github.io/2013/07/13/第 15 章 一个经济波动的动态模型/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>第 15 章 一个经济波动的动态模型 | fanzhuan</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">fanzhuan</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">横浜国立大学</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+    
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://dushangdushang.github.io/2013/07/13/第 15 章 一个经济波动的动态模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fan zhuan">
+      <meta itemprop="description" content="本站记录笔者在横滨国立大学的学习和感想">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fanzhuan">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">第 15 章 一个经济波动的动态模型
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2013-07-13 20:46:25" itemprop="dateCreated datePublished" datetime="2013-07-13T20:46:25+09:00">2013-07-13</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-08 11:33:26" itemprop="dateModified" datetime="2019-09-08T11:33:26+09:00">2019-09-08</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="模型的要素">15.1 模型的要素</h2>
+<p>现在，让我们看一下构成动态 <span class="math inline">\(AD-AS\)</span> 模型的五个方程。</p>
+<p><img src="../images/1567825903385.png" alt="1567825903385" style="zoom:67%;"></p>
+<figure>
+<img src="../images/批注%202019-09-07%20142306.jpg" alt><figcaption>批注 2019-09-07 142306</figcaption>
+</figure>
+<h3 id="产出产品与服务需求">15.1.1 产出：产品与服务需求</h3>
+<p><span class="math display">\[
+Y_t = \overline{Y}_t-\alpha(r_t-\rho)+\epsilon_t
+\]</span> 式中，<span class="math inline">\(Y_t\)</span> 为产品与服务的总产出；<span class="math inline">\(\overline{Y}_t\)</span> 为经济的自然产出水平；<span class="math inline">\(r_t\)</span> 为实际利率；<span class="math inline">\(\epsilon_t\)</span> 为随机的需求冲击；<span class="math inline">\(\alpha\)</span> 和 <span class="math inline">\(\rho\)</span> 为大于 0 的参数。</p>
+<p>这个方程的关键特征是实际利率 <span class="math inline">\(r_t\)</span> 和产品与服务需求 <span class="math inline">\(Y_t\)</span> 之间的负相关关系。当实际利率增加时，借款变得更加昂贵，储蓄则得到更多的回报。因此，企业的投资项目减少，消费者储蓄得更多，花费得更少。这两种影响都减少了产品与服务需求。（此外，美元在外汇交易市场上可能升值，使得净出口下降，但是，对于我们这一章的目的，这些开放经济影响并不占中心地位，在很大程度上可以被忽略。）参数 <span class="math inline">\(\alpha\)</span> 告诉我们需求对实际利率的变化有多敏感。 <span class="math inline">\(\alpha\)</span> 的值越大，产品与服务需求对一个给定的实际利率变化所做出的反应越大。</p>
+<p>我们把 <span class="math inline">\(\rho\)</span> 称做自然利率，这是因为它是在没有任何冲击的情况下产品与服务需求等于自然产出水平所对应的实际利率。也就是说，如果 <span class="math inline">\(\epsilon_t=0\)</span> 和 <span class="math inline">\(r_t=\rho\)</span> ，那么 <span class="math inline">\(Y_t=\overline{Y}_t\)</span> 。在本章稍后，我们会看到，实际利率 <span class="math inline">\(r_t\)</span> 在长期往往向自然利率 <span class="math inline">\(\rho\)</span> 运动。我们在本章一律假设自然利率为常数（也就是说，在各期都相等）。</p>
+<p>货币政策通过改变实际利率 <span class="math inline">\(r_t\)</span> 影响需求。财政政策制定者改变税收或政府支出，它们改变了任何给定利率下的需求。因此，变量 <span class="math inline">\(\epsilon_t\)</span> 体现了财政政策的变化。</p>
+<p><font face="楷体">思考：一直没有想的一个问题，就是自然产生水平如何估计?</font></p>
+<h3 id="实际利率费雪方程">15.1.2 实际利率：费雪方程</h3>
+<p><span class="math display">\[
+r_t = i_t - E_t\pi_{t+1}
+\]</span></p>
+<p><span class="math inline">\(E_t\pi_{t+1}\)</span> 代表时期 <span class="math inline">\(t\)</span> 形成的对 <span class="math inline">\(t+1\)</span> 时期通货膨胀的预期。</p>
+<p>事前实际利率，在时间 <span class="math inline">\(t\)</span> 就已经知道了。</p>
+<h3 id="通货膨胀菲利普斯曲线">15.1.3 通货膨胀：菲利普斯曲线</h3>
+<p>这个经济中的通货膨胀由传统的菲利普斯曲线经过扩充以包括预期通货膨胀和外生供给冲击的作用后的菲利普斯曲线决定。通货膨胀的方程是： <span class="math display">\[
+\pi_t=E_{t-1}\pi_t+\phi(Y_t-\overline{Y}_t)+v_t
+\]</span></p>
+<p><span class="math inline">\(v_t\)</span> 反映了所有直接影响通货膨胀的外生事件。</p>
+<h3 id="预期的通货膨胀适应性预期">15.1.4 预期的通货膨胀：适应性预期</h3>
+<p><span class="math display">\[
+E_t\pi_{t+1}=\pi_t
+\]</span></p>
+<h3 id="名义利率货币政策规则">15.1.5 名义利率：货币政策规则</h3>
+<p><span class="math display">\[
+i_t=\pi_t+\rho+\theta_{\pi}(\pi_t-\pi_t^*)+\theta_Y(Y_t-\overline{Y}_t)
+\]</span></p>
+<p><span class="math inline">\(\pi_t^*\)</span> 是中央银行的通货膨胀目标。（对于大部分目的而言，目标通货膨胀可以被假设为常数，但是我们将保留这个变量的时间下标，以便我们后面能够分析中央银行改变其目标时会发生什么。）</p>
+<p><span class="math inline">\(\theta_{\pi}\)</span> 和 <span class="math inline">\(\theta_Y\)</span> 是两个关键的政策参数，均被假设为大于 0 。它们表明中央银行允许利率目标对通货膨胀和产出的波动作出多大的反应。</p>
+<p>如果联合后面几个公式，当通货膨胀在其目标水平且产出在其自然水平时，那么实际利率等于自然利率。如下：</p>
+<p><span class="math display">\[
+\begin{aligned}
+r_t &amp;= i_t - E_t\pi_{t+1}\\
+&amp;=i_t - \pi_t\\
+&amp;=\pi_t+\rho-\pi_t\\
+&amp;=\rho
+\\
+\end{aligned}
+\]</span></p>
+<p>此时，有人可能很自然会问：“货币供给会如何变动？”在前面的章节里，比如说第 11 章和第 12 章，货币供给通常作为中央银行的政策工具，利率调整以实现货币供给和货币需求的均衡。这里，我们的逻辑截然相反。中央银行被假设为设定名义利率目标。然后，他将货币供给调整到确保（使货币供给和货币需求达到平衡的）均衡利率等于目标所需要的任何水平。</p>
+<p>使用利率而不是货币供给作为动态 <span class="math inline">\(AD-AS\)</span> 模型中政策工具的主要优点是，它更加具有现实性。今天，包括美联储在内的绝大多数中央银行都为名义利率设定短期目标。但是，牢记实现该目标要求对货币供给进行调整。对于本模型，我们不需要详细说明货币市场的均衡条件，但是我们应该记住它潜藏在模型的背景里。当中央银行决定改变利率时，它也就同时要致力于相应地调整货币供给。</p>
+<h2 id="模型求解">15.2 模型求解</h2>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567581533648.png" alt="1567581533648" style="zoom: 50%;"></p>
+<h3 id="长期均衡">15.2.1 长期均衡</h3>
+<p><span class="math display">\[
+Y_t=\overline{Y}_t\\
+r_t = \rho\\
+\pi_t = \pi_t^*\\
+E_t\pi_{t+1}=\pi_t^*\\
+i_t=\rho + \pi_t^*
+\]</span> 用文字表述，长期均衡可以表述如下：产出和实际利率等于它们的自然水平，通货膨胀和预期的通货膨胀等于通货膨胀的目标值，名义利率等于自然利率加上目标通货膨胀。</p>
+<p>这个模型的长期均衡反映两个相关的原理：古典二分法和货币中性。回忆古典二分法是实际变量和名义变量分离，货币中性是货币政策不影响实际变量这一性质。</p>
+<h3 id="动态总供给曲线">15.2.2 动态总供给曲线</h3>
+<p>为了研究短期中经济的行为，用图形分析模型是有用的。</p>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567582493343.png" alt="1567582493343" style="zoom: 33%;"></p>
+<p>为了分离出 <span class="math inline">\(Y_t\)</span> 和 <span class="math inline">\(\pi_t\)</span> 之间的关系，我们需要用到一点代数来消除其他三个内生变量（<span class="math inline">\(r_t\)</span> ，<span class="math inline">\(i_t\)</span> 和 <span class="math inline">\(E_t\pi_{t+1}\)</span> ）。</p>
+<p>产出和通货膨胀的第一个关系几乎直接来自菲利普斯曲线方程。通过使用关于通货膨胀预期的方程 <span class="math inline">\(E_{t-1}\pi_{t}=\pi_t\)</span> 把预期的通货膨胀 <span class="math inline">\(E_{t-1}\pi_{t}\)</span> 用过去的通货膨胀率 <span class="math inline">\(\pi_{t-1}\)</span> 来代替，我们可以消除菲利普斯曲线方程中的一个内生变量（<span class="math inline">\(E_t \pi_{t+1}\)</span>）。这样替代役后，菲利普斯曲线方程变成： <span class="math display">\[
+\pi_t=\pi_{t-1}+\phi(Y_t-\overline{Y}_{t}+v_t) \\
+\tag{DAS}
+\]</span> 动态总供给曲线是在过去的通货膨胀率 <span class="math inline">\(\pi_{t-1}\)</span>、自然产出水平 <span class="math inline">\(\overline{Y}_t\)</span> 和供给冲击 <span class="math inline">\(v_t\)</span> 的取值给定的情况下绘制的。当这些变量变化时，该曲线就会移动。</p>
+<h3 id="动态总需求曲线">15.2.3 动态总需求曲线</h3>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567582806283.png" alt="1567582806283" style="zoom: 33%;"></p>
+<p>我们从产品与服务需求开始： <span class="math display">\[
+Y_t = \overline{Y}_t-\alpha(r_t-\rho)+\epsilon_t
+\]</span> 为了消除 <span class="math inline">\(r_t\)</span> ，我们代入费雪方程，将 <span class="math inline">\(r_t\)</span> 用 <span class="math inline">\(i_t-E_t \pi_{t+1}\)</span> 来代替： <span class="math display">\[
+Y_t = \overline{Y}_t-\alpha(i_t - E_t\pi_{t+1}-\rho)+\epsilon_t
+\]</span> 为了消除另一个内生变量，名义利率 <span class="math inline">\(i_t\)</span> ，我们用货币政策方程来代替 <span class="math inline">\(i_t\)</span> ： <span class="math display">\[
+Y_t = \overline{Y}_t-\alpha[\pi_t+\rho+\theta_{\pi}(\pi_t-\pi_t^*)+\theta_Y(Y_t-\overline{Y}_t) - E_t\pi_{t+1}-\rho]+\epsilon_t
+\]</span> 接下来，为了消除预期的通货膨胀率 <span class="math inline">\(E_t \pi_{t+1}\)</span> 这一内生变量，我们用通货膨胀预期方程替代： <span class="math display">\[
+Y_t = \overline{Y}_t-\alpha[\pi_t+\rho+\theta_{\pi}(\pi_t-\pi_t^*)+\theta_Y(Y_t-\overline{Y}_t) - \pi_t-\rho]+\epsilon_t
+\]</span> 化简变成： <span class="math display">\[
+Y_t = \overline{Y}_t-\alpha[\theta_{\pi}(\pi_t-\pi_t^*)+\theta_Y(Y_t-\overline{Y}_t)]+\epsilon_t
+\]</span> 如果我们合并同类项求解 <span class="math inline">\(Y_t\)</span> ，可以得到 <span class="math display">\[
+Y_t=\overline{Y}_t-\frac{\alpha \theta_{\pi}}{1+\alpha \theta_{Y}}(\pi_t-\pi_t^*)+\frac{1}{1+\alpha \theta_{Y}} \epsilon_t \\
+\tag{DAD}
+\]</span></p>
+<p>DAD 曲线表明产出的需求量与通货膨胀在短期内是如何相关的。它是在该方程中自然产出水平 <span class="math inline">\(\overline{Y}_t\)</span> 、通货膨胀目标 <span class="math inline">\(\pi_t^*\)</span> 和需求冲击 <span class="math inline">\(\epsilon_t\)</span> 这三个外生变量为常数的情况下绘制的。如果这三个外生变量的任何一个改变了，DAD曲线就会移动。</p>
+<ul>
+<li>区别</li>
+</ul>
+<p>12 章中传统总需求曲线是相对于给定的货币供给绘制的。与此相反，由于推导动态需求方程的过程中用到货币政策规则，<font color="DarkRed">动态总需求曲线是相对于给定的货币政策规则绘制的。在该规则下，中央银行基于宏观经济条件设定利率，允许货币供给相应地调整。</font></p>
+<p><font color="DarkRed">由于如下机制，动态总需求曲线向下倾斜。当通货膨胀上升时，中央银行作出的反应是：遵循其货币政策规则，提高名义利率。由于该规则规定中央银行提高的名义利率的量要超过通货膨胀增加的量，实际利率随之上升。实际利率的上升降低了产品与服务的需求量。通过中央银行政策起作用的通货膨胀和需求量之间的这种负相关关系使得动态总需求曲线向下倾斜。</font></p>
+<p>DAD方程表明，其他各个变量取值固定时，<span class="math inline">\(\pi_t^*\)</span> 的增加提高了产出的需求量。（<span class="math inline">\(\pi_t^*\)</span> 前面由两个负号，因此效果是正的。）这一数学结果背后的机制是：当中央银行提高其通货膨胀目标时，它通过（按照货币政策规则规定的那样）降低名义利率实行一种更具扩张性的货币政策。对于任何给定的通货膨胀率，更低的名义利率意味着更低的实际利率，而更低的实际利率刺激了在产品与服务上的支出。从而，对于任何给定的通货膨胀率，产出更高了，因此，动态总需求曲线右移。相反，当中央银行降低其通货膨胀率目标时，他提高了名义利率和实际利率，从而抑制了产品与服务的需求，使得动态总需求曲线左移。</p>
+<h3 id="短期均衡">15.2.4 短期均衡</h3>
+<p><span class="math display">\[
+\pi_t=\pi_{t-1}+\phi(Y_t-\overline{Y}_{t}+v_t) \\
+\tag{DAS}
+\]</span></p>
+<p><span class="math display">\[
+Y_t=\overline{Y}_t-\frac{\alpha \theta_{\pi}}{1+\alpha \theta_{Y}}(\pi_t-\pi_t^*)+\frac{1}{1+\alpha \theta_{Y}} \epsilon_t \\
+\tag{DAD}
+\]</span></p>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567585035482.png" alt="1567585035482" style="zoom:33%;"></p>
+<h2 id="模型运用">15.3 模型运用</h2>
+<p>本模型的四个外生变量是</p>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567585271297.png" alt="1567585271297" style="zoom:33%;"></p>
+<p>为简单起见，我们将假设经济总是从长期均衡状态开始，然后一个外生变量发生了变化。我们也假设其他外生变量保持不变。</p>
+<h3 id="长期增长">15.3.1 长期增长</h3>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567585378838.png" alt="1567585378838" style="zoom:33%;"></p>
+<p>正如第 8 章和第 9 章所讨论的，由于人口增长、资本积累和技术进步，经济的自然产出水平 <span class="math inline">\(\overline{Y}_t\)</span> 随着时间推移而增加。就我们此处的目的而言，我们可以把这样的增长视为外生——也就是说，在本模型以外决定。图 15-5 表示了 <span class="math inline">\(\overline{Y}_t\)</span> 外生变量增加的影响。由于自然产出水平既影响动态总需求曲线又影响动态总供给曲线，所以，两条曲线都发生了移动。实际上，他们都向右移动，移动的幅度正好是 <span class="math inline">\(\overline{Y}_t\)</span> 增加的数量。</p>
+<h3 id="总供给冲击">15.3.2 总供给冲击</h3>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567585798370.png" alt="1567585798370" style="zoom: 40%;"></p>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567586062887.png" alt="1567586062887" style="zoom: 50%;"></p>
+<h3 id="总需求冲击">15.3.3 总需求冲击</h3>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567588430540.png" alt="1567588430540" style="zoom: 50%;"></p>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567588630408.png" alt="1567588630408" style="zoom:50%;"></p>
+<h3 id="货币政策的变动">15.3.4 货币政策的变动</h3>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567589152357.png" alt="1567589152357" style="zoom: 50%;"></p>
+<h2 id="两个应用对货币政策的启示">15.4 两个应用：对货币政策的启示</h2>
+<p><img src="C:\Users\13631\AppData\Roaming\Typora\typora-user-images\1567589997535.png" alt="1567589997535" style="zoom: 50%;"> <span class="math display">\[
+Y_t=\overline{Y}_t-\frac{\alpha \theta_{\pi}}{1+\alpha \theta_{Y}}(\pi_t-\pi_t^*)+\frac{1}{1+\alpha \theta_{Y}} \epsilon_t \\
+\tag{DAD}
+\]</span></p>
+<h2 id="结论向着-dsge-模型迈进">15.5 结论：向着 DSGE 模型迈进</h2>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/宏观经济/" rel="tag"># 宏观经济</a>
+            
+              <a href="/tags/Fight/" rel="tag"># Fight</a>
+            
+              <a href="/tags/Shocking/" rel="tag"># Shocking</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/07/hello-world/" rel="prev" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型的要素"><span class="nav-number">1.</span> <span class="nav-text">15.1 模型的要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#产出产品与服务需求"><span class="nav-number">1.1.</span> <span class="nav-text">15.1.1 产出：产品与服务需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际利率费雪方程"><span class="nav-number">1.2.</span> <span class="nav-text">15.1.2 实际利率：费雪方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通货膨胀菲利普斯曲线"><span class="nav-number">1.3.</span> <span class="nav-text">15.1.3 通货膨胀：菲利普斯曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预期的通货膨胀适应性预期"><span class="nav-number">1.4.</span> <span class="nav-text">15.1.4 预期的通货膨胀：适应性预期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#名义利率货币政策规则"><span class="nav-number">1.5.</span> <span class="nav-text">15.1.5 名义利率：货币政策规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型求解"><span class="nav-number">2.</span> <span class="nav-text">15.2 模型求解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#长期均衡"><span class="nav-number">2.1.</span> <span class="nav-text">15.2.1 长期均衡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态总供给曲线"><span class="nav-number">2.2.</span> <span class="nav-text">15.2.2 动态总供给曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态总需求曲线"><span class="nav-number">2.3.</span> <span class="nav-text">15.2.3 动态总需求曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短期均衡"><span class="nav-number">2.4.</span> <span class="nav-text">15.2.4 短期均衡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型运用"><span class="nav-number">3.</span> <span class="nav-text">15.3 模型运用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#长期增长"><span class="nav-number">3.1.</span> <span class="nav-text">15.3.1 长期增长</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总供给冲击"><span class="nav-number">3.2.</span> <span class="nav-text">15.3.2 总供给冲击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总需求冲击"><span class="nav-number">3.3.</span> <span class="nav-text">15.3.3 总需求冲击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#货币政策的变动"><span class="nav-number">3.4.</span> <span class="nav-text">15.3.4 货币政策的变动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两个应用对货币政策的启示"><span class="nav-number">4.</span> <span class="nav-text">15.4 两个应用：对货币政策的启示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论向着-dsge-模型迈进"><span class="nav-number">5.</span> <span class="nav-text">15.5 结论：向着 DSGE 模型迈进</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Fan zhuan</p>
+  <div class="site-description" itemprop="description">本站记录笔者在横滨国立大学的学习和感想</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fan zhuan</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/muse.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+    
+  
+
+  
+
+  
+
+</body>
+</html>
