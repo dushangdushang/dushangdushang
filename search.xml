@@ -14,6 +14,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[第 4 章 货币系统：它是什么？如何起作用？]]></title>
+    <url>%2F2019%2F09%2F08%2F%E7%AC%AC%204%20%E7%AB%A0%20%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F%EF%BC%9A%E5%AE%83%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E8%B5%B7%E4%BD%9C%E7%94%A8%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[4.1 货币 货币是固定地存档一般等价物的特殊商品，货币具有流动性，它是财富的一种类型，但不是指所有财富。 （1）货币的职能 ①价值储藏手段，它是现在购买力变成未来购买力的方法。 ②计价单位 ③交换媒介 （2）货币的类型 ①法定货币：没有内在价值，国家在法律上赋予强制流通能力的货币。 ②商品货币：指把有某种内在价值的商品作为货币，最普遍的例子是黄金。 （3）货币量的控制 一个经济体中可以得到的货币量称为货币供给。对货币量的供给主要是通过中央银行的货币政策实现的。常用的货币政策包括公开市场操作、存款准备金率调整、再贴现率的调整。 （4）货币量的衡量 货币衡量指标由多种，一般依据金融资产的流动性由高到低，对货币进行层次的划分。在美国，美联储对货币量的衡量指标有： \[ \begin{aligned} C&amp;=通货\\ M_1&amp;=C+活期存款+旅行支票+其他可支取存款\\ M_2&amp;=M_1+散户货币市场共同基金余额+储蓄存款+小额定期存款\\ M_3&amp;=M_2+大额定期存款+回购协定+欧洲美元+只为机构服务的货币市场共同基金余额\\ \end{aligned} \] 我国具体分为： \[ \begin{aligned} M_0&amp;=流通中的现金\\ M_1&amp;=M_0+企业活期存款+机关团体部队存款+农村存款+个人持有的信用卡类存款\\ M_2&amp;=M_1+城乡居民储蓄存款+企业存款中具有定期性质的存款+信托类存款+其他存款\\ M_3&amp;=M_2+金融债券+商业票据+大额可转让定期存单 \end{aligned} \] 4.2 银行在货币系统中的作用 货币供给不仅有美联储的政策决定，而且由家庭（它们持有货币）和银行（货币被存放在银行中）的行为决定。货币供给既包括公众手中的货币，有包括家庭存放在银行中在交易需要时可以使用的存款（比如支票账户余额）。如果 \(M\) 代表货币供给，\(C\) 代表通货，\(D\) 代表活期存款，我们可以写成 \[ M=C+D \] （1）准备金制度 ①百分之百准备金制度。银行只接受存款，不发放贷款。把所有存款作为准备金持有。这时，银行体系不影响货币供给。 ②部分准备金制度。令 \(rr\) 代表存款准备金率，初始的 1000 美元创造的货币量是： \[ \begin{aligned} 初始存款&amp;=1000\\ 第一银行贷款&amp;=(1-rr) \times 1000\\ 第一银行贷款&amp;=(1-rr)^2 \times 1000\\ 第一银行贷款&amp;=(1-rr)^3 \times 1000\\ 总计货币供给&amp;=[1+(1-rr)+(1-rr)^2...] \times 1000\\ &amp;=(1/rr) \times 1000 \end{aligned} \] 4.3 中央银行如何影响货币供给 （1）一个货币供给模型 ①模型的三个外生变量 基础货币（monetary base）\(B\) 是公众以通货形式持有的美元 \(C\) 和银行以准备金形式持有的美元 \(R\) 的总量。它由美联储直接控制。 存款准备金率（reserve-deposit ratio）\(rr\) 是银行持有的准备金占存款的比例。它由银行的经营政策和监管银行的法律决定。 通货存款比（currency-deposit ratio）\(cr\) 是人们持有的通货量 \(C\) 对其活期存款量 \(D\) 的比例。它反映了家庭对其希望持有的货币形式的偏好。 我们从货币供给和基础货币的定义开始： \[ M=C+D\\ B=C+R \] 第一个方程是说，货币供给是同伙与活期存款之和。第二个方程是说，基础货币是通货与银行准备金之和。为了解作为模型中三个外生变量（\(B\) 、\(rr\) 和 \(cr\) ）的函数的货币供给，我们用第一个方程除以第二个方程，得到 \[ \frac{M}{B}=\frac{C+D}{C+R} \] 然后，我们把方程右边表达式的分子和分母同时除以 \(D\) ： \[ \frac{M}{B}=\frac{C/D+1}{C/D+R/D} \] 注意，\(C/D\) 是通货存款比 \(cr\) ，\(R/D\) 是存款准备金率 \(rr\) 。进行这些替代，并把 \(B\) 从等式左边移到有右边，我们得到 \[ M=\frac{cr+1}{cr+rr} \times B \] 比例因子 \((cr+1)/(cr+rr)\) 用 \(m\) 来表示，称为货币乘数（money multiplier）。我们可以写出 \[ M=m \times B \] 现在我们可以看出三个外生变量——\(B\) 、\(rr\) 和 \(cr\) 的变动如何引起货币供给变动。 1、货币供给与基础货币是成比例的。因此，基础货币的增加引起货币供给按同样的百分比增加。 2、存款准备金率越低，银行发放的贷款就越多，银行从每 1 美元准备金中创造出来的货币也就越多。因此，存款准备金率的下降提高了货币乘数，增加了货币供给。 3、通货存款比越低，公众作为货币持有的处处美元就越少，银行作为准备金持有的基础美元也就越多，银行能够创造的货币也就越多。因此，通货存款比的下降提高了货币乘数，增加了货币供给。 （2）货币政策工具 包括公开市场业务、法定准备金率和贴现率。]]></content>
+      <categories>
+        <category>经济学</category>
+        <category>宏观经济学</category>
+      </categories>
+      <tags>
+        <tag>宏观经济学</tag>
+        <tag>货币政策</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F09%2F07%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post 1$ hexo new "My New Post" More info: Writing Run server 1$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites 1$ hexo deploy More info: Deployment]]></content>
